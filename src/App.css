@@ -6,6 +6,20 @@
   padding: 0px;
 }
 
+h1 {
+  color: #a62d12;
+  font-family: "Playfair Display", serif;
+  font-size: 60px;
+  font-style: italic;
+}
+
+p {
+  color: #708c08;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 15px;
+  margin: 25px;
+}
+
 html {
   background: url(images/art-artistic-beautiful-bloom-311458.jpg) no-repeat
     center center fixed;
@@ -20,9 +34,59 @@ html {
 .App {
   display: flex;
   flex-direction: column;
-  margin-top: 150px;
+  padding-top: 130px;
   align-items: center;
   height: 100vh;
+}
+
+.name {
+  margin: 0px 20px;
+}
+
+.subtitle {
+  color: #f27507;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 25px;
+}
+
+.text-content {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text-content h2 {
+  padding: 0;
+  margin: 0;
+  color: rgb(197, 60, 129);
+  font-size: 36px;
+  text-shadow: 2px 0 rgba(0, 0, 0, 0.5);
+}
+
+.text-content h2 span:before {
+  content: "";
+  animation: animate infinite 8s;
+}
+@keyframes animate {
+  0% {
+    content: "a Full-Stack Web Developer";
+  }
+  20% {
+    content: "a Cat Lover";
+  }
+  40% {
+    content: "a Video Game Enthusiast";
+  }
+  60% {
+    content: "an Enviornmentalist";
+  }
+  80% {
+    content: "a Tea Devourer";
+  }
+  100% {
+    content: "a Problem Solver";
+  }
 }
 
 /* App component ID styles */
